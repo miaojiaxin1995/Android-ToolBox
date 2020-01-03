@@ -11,13 +11,20 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import club.hellomiao.toolmiao.dice.DiceActivity;
+
 /**
  * @author MiaoJiaxin
  */
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
 
     private ListView mListView;
-    private String[] functionName = new String[] {"全部功能","反馈","关于我"};
+    private String[] functionName = new String[] {"关于我","掷骰子","生成随机数"};
+    /***
+     * 0:关于我
+     * 1:掷骰子
+     * 2:生成随机数
+     */
     private Context thisContext = MainActivity.this;
 
 
@@ -47,15 +54,19 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         switch (position) {
             case 0 :
-                Toast.makeText(this,"listview点击事件0触发"+position,Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(thisContext,FunctionsActivity.class);
-                thisContext.startActivity(intent);
+                //关于我
+                Intent intentAboutMe = new Intent(thisContext, AboutMeActivity.class);
+                thisContext.startActivity(intentAboutMe);
                 break;
             case 1:
-                Toast.makeText(this,"该功能待开发???",Toast.LENGTH_SHORT).show();
+                //掷骰子
+                Intent intentDice = new Intent(thisContext, DiceActivity.class);
+                thisContext.startActivity(intentDice);
                 break;
             case 2:
-                Toast.makeText(this,"listview点击事件0触发"+position,Toast.LENGTH_SHORT).show();
+                //生成随机数
+                Toast.makeText(this,"该功能待开发..."+position,Toast.LENGTH_SHORT).show();
+
              default:
                  break;
         }

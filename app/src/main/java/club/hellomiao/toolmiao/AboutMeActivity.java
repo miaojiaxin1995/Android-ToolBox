@@ -4,6 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import club.hellomiao.toolmiao.R;
+
+/**
+ * @author MiaoJiaxin
+ */
 public class AboutMeActivity extends AppCompatActivity {
 
     @Override
