@@ -1,4 +1,4 @@
-package club.hellomiao.toolmiao.dice;
+package club.hellomiao.toolmiao;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,7 +14,6 @@ import club.hellomiao.toolmiao.Utils;
  * @author MiaoJiaxin
  */
 public class DiceActivity extends AppCompatActivity {
-
     private ImageView imageViewDice;
     private Button buttonRoll;
 

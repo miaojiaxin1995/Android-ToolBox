@@ -10,6 +10,7 @@ import java.util.Random;
  * @time 2020/1/3 23:01
  * @change :
  */
+
 public class Utils {
         public static int generateRandomValue(int startValue, int endValue, int graduationValue) {
             double checkValue = (endValue-startValue)/graduationValue%1;
